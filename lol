@@ -1,7 +1,7 @@
 
 -- Gui to Lua
 -- Version: 3.2
-local UILib = {
+local PenguinLib = {
 	GuiObject = nil,
 	tabs = {},
 	modules = {}, -- name = tab_parent
@@ -10,7 +10,7 @@ local UILib = {
 -- Instances:
 
 --Properties:
-function UILib:CreateWindow(name,version)
+function PenguinLib.CreateWindow(name,version)
 	local MainUI = Instance.new("ScreenGui")
 	local Frame = Instance.new("Frame")
 	local UIGradient = Instance.new("UIGradient")
