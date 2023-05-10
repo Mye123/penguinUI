@@ -1,6 +1,12 @@
+
 -- Gui to Lua
 -- Version: 3.2
-
+local UILib = {
+	GuiObject = nil,
+	tabs = {},
+	modules = {}, -- name = tab_parent
+	flags = {},
+}
 -- Instances:
 
 --Properties:
@@ -24,6 +30,9 @@ function UILib:CreateWindow(name,version)
 	Frame.BorderSizePixel = 5
 	Frame.Position = UDim2.new(0.263502061, 0, 0.216508836, 0)
 	Frame.Size = UDim2.new(0, 609, 0, 372)
+Frame.Draggable = true
+Frame.Selectable = true
+Frame.Active = true
 
 	UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(50, 50, 50)), ColorSequenceKeypoint.new(0.18, Color3.fromRGB(56, 56, 56)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(47, 47, 47)), ColorSequenceKeypoint.new(0.72, Color3.fromRGB(47, 47, 47)), ColorSequenceKeypoint.new(0.85, Color3.fromRGB(45, 45, 45)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(30, 30, 30))}
 	UIGradient.Parent = Frame
