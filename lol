@@ -10,7 +10,7 @@ local PenguinLib = {
 -- Instances:
 
 --Properties:
-function PenguinLib.CreateWindow(name,version)
+function PenguinLib:CreateWindow(name,version)
 	local MainUI = Instance.new("ScreenGui")
 	local Frame = Instance.new("Frame")
 	local UIGradient = Instance.new("UIGradient")
