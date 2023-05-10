@@ -75,13 +75,32 @@ Frame.Active = true
 
 	UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(25, 25, 25)), ColorSequenceKeypoint.new(0.18, Color3.fromRGB(16, 16, 16)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(20, 20, 20)), ColorSequenceKeypoint.new(0.72, Color3.fromRGB(16, 15, 15)), ColorSequenceKeypoint.new(0.83, Color3.fromRGB(13, 13, 13)), ColorSequenceKeypoint.new(0.85, Color3.fromRGB(12, 12, 12)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(15, 15, 15))}
 	UIGradient_2.Parent = Frame_2
+local TabsButtons = Instance.new("Frame")
+end
+function PenguinLib:CreateTab(name)
+local UIListLayout = Instance.new("UIListLayout")
+local Tab2 = Instance.new("TextButton")
+local Tabs = Instance.new("Folder")
+local Tab2_2 = Instance.new("Frame")
+UIListLayout.Parent = TabsButtons
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+Tab2.Name = "Tab2"
+Tab2.Parent = TabsButtons
+Tab2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab2.Size = UDim2.new(0, 169, 0, 50)
+Tab2.Font = Enum.Font.SourceSans
+Tab2.Text = name
+Tab2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Tab2.TextScaled = true
+Tab2.TextSize = 14.000
+Tab2.TextWrapped = true
+Tab2_2.Name = name
+Tab2_2.Parent = Tabs
+Tab2_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab2_2.BackgroundTransparency = 1.000
+Tab2_2.Position = UDim2.new(0.303759158, 0, 0.0199806467, 0)
+Tab2_2.Size = UDim2.new(0, 417, 0, 363)
 
-	Tabs.Name = "Tabs"
-	Tabs.Parent = Frame
-	Tabs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	Tabs.BackgroundTransparency = 1.000
-	Tabs.Position = UDim2.new(0.00171579944, 0, 0.206963733, 0)
-	Tabs.Size = UDim2.new(0, 179, 0, 293)
 
 end
 return PenguinLib
